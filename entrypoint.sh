@@ -52,7 +52,7 @@ else
     HAS_CONFIG=false
 fi
 
-${INPUT_PHPCS_BIN_PATH} ${WARNING_FLAG} --report=checkstyle --standard=${INPUT_STANDARD} --ignore=${EXCLUDES} --extensions=php ${INPUT_PATHS} ${INPUT_EXTRA_ARGS}
+${INPUT_PHPCS_BIN_PATH} ${WARNING_FLAG} --report=checkstyle --ignore=${EXCLUDES} --extensions=php ${INPUT_PATHS} ${INPUT_EXTRA_ARGS}
 
 status=$?
 
